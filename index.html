@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Votação Novo Sinal Musical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Votação Novo Sinal Musical</h1>
+
+    <p class="descricao">
+        Vocês já devem ter percebido que o nosso sinal mudou.<br><br>
+
+        Essa alteração foi pensada com muito cuidado, priorizando o bem-estar de todos
+        e a inclusão de pessoas com sensibilidade a sons estridentes.<br><br>
+
+        Acreditamos que pequenos ajustes fazem grande diferença no ambiente escolar
+        e ajudam a tornar a escola cada vez mais acolhedora.<br><br>
+
+        Selecionamos 3 opções de músicas e agora contamos com a sua participação
+        para escolher aquela que melhor representará o nosso dia a dia.<br><br>
+
+        <strong>A votação ficará aberta até quinta-feira, 26/02.</strong>
+    </p>
+
+    <form id="musicForm">
+        <label class="option">
+            <input type="radio" name="music" value="Música 01" data-file="music1.mp4">
+            Música 01
+        </label>
+
+        <label class="option">
+            <input type="radio" name="music" value="Música 02" data-file="music2.mp4">
+            Música 02
+        </label>
+
+        <label class="option">
+            <input type="radio" name="music" value="Música 03" data-file="music3.mp4">
+            Música 03
+        </label>
+
+        <button type="submit">Votar</button>
+    </form>
+
+    <audio id="player" controls></audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
